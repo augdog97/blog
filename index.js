@@ -27,7 +27,7 @@ app.set('view engine', 'ejs');
     */
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://augdog97:Lemonade97989@blog-portfolio.9f5gv.mongodb.net/test', { useNewUrlParser: true })
+mongoose.connect('Mongodb connect url ', { useNewUrlParser: true })
 
 
 
