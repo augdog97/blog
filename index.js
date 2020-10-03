@@ -8,6 +8,7 @@ const fileUpload = require('express-fileupload')
 const bodyParser = require('body-parser');
 const expressSession = require('express-session');
 const flash = require('connect-flash');
+require('dotenv').config();
 
 /* View Engine used */
 const ejs = require('ejs');
@@ -27,7 +28,7 @@ app.set('view engine', 'ejs');
     */
 
 const mongoose = require('mongoose');
-mongoose.connect('Mongodb connect url ', { useNewUrlParser: true })
+mongoose.connect(process.env.mongo_url, { useNewUrlParser: true })
 
 
 
